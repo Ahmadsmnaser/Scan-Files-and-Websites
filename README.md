@@ -64,5 +64,3 @@ It supports real-time threat detection using the VirusTotal and MetaDefender API
 
 - Ahmad Naser
 📧 Ahmadsmnaser@gmail.com
-
-🔗 GitHub: https://github.com/Ahmadsmnaser
