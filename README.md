@@ -16,40 +16,19 @@ It supports real-time threat detection using the VirusTotal and MetaDefender API
 - Browser Download/URL Event → Extension Background Script → API Scan (VirusTotal, MetaDefender) → Popup UI → User Alert
 
 - The extension leverages Chrome Extension APIs, asynchronous messaging between background & popup, and robust hash computation & API integration.
-🛠️ Tech Stack
+  
+## 🛠️ Tech Stack
 
-    - Languages: JavaScript, HTML, CSS
+- Languages: JavaScript, HTML, CSS
 
-    - Browser Platform: Google Chrome Extension APIs
+- Browser Platform: Google Chrome Extension APIs
 
-    - Security APIs: VirusTotal, MetaDefender
+- Security APIs: VirusTotal, MetaDefender
 
-    - Tools: Git, Chrome DevTools
+- Tools: Git, Chrome DevTools
 
-    - Security Concepts: SHA-256 hashing, asynchronous API calls, user alert flows
+- Security Concepts: SHA-256 hashing, asynchronous API calls, user alert flows
 
-## 📂 Project Structure
-
-Scan-Files-and-Websites/
-│── manifest.json
-│── background.js
-│── popup.js
-│── popup.html
-│── popup.css
-│── README.md
-│── File and Website Security Scanner Chrome Extension.pdf
-
-## 👤 My Role
-
- - Designed and implemented the extension logic to monitor downloads and URL visits
-
- - Implemented SHA-256 hash calculation for files
-
- - Integrated with VirusTotal & MetaDefender APIs for real-time scanning
-
- - Developed frontend popup UI & alerts for user interaction
-
- - Ensured code modularity and maintainability
 
 ## ✅ Example Usage
 
