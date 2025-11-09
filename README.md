@@ -13,24 +13,24 @@ It supports real-time threat detection using the VirusTotal and MetaDefender API
 
 ## 🧠 Architecture
 
-Browser Download/URL Event → Extension Background Script → API Scan (VirusTotal, MetaDefender) → Popup UI → User Alert
+- Browser Download/URL Event → Extension Background Script → API Scan (VirusTotal, MetaDefender) → Popup UI → User Alert
 
-The extension leverages Chrome Extension APIs, asynchronous messaging between background & popup, and robust hash computation & API integration.
+- The extension leverages Chrome Extension APIs, asynchronous messaging between background & popup, and robust hash computation & API integration.
 🛠️ Tech Stack
 
-    Languages: JavaScript, HTML, CSS
+    - Languages: JavaScript, HTML, CSS
 
-    Browser Platform: Google Chrome Extension APIs
+    - Browser Platform: Google Chrome Extension APIs
 
-    Security APIs: VirusTotal, MetaDefender
+    - Security APIs: VirusTotal, MetaDefender
 
-    Tools: Git, Chrome DevTools, Webpack/ (if used)
+    - Tools: Git, Chrome DevTools, Webpack/ (if used)
 
-    Security Concepts: SHA-256 hashing, asynchronous API calls, user alert flows
+    - Security Concepts: SHA-256 hashing, asynchronous API calls, user alert flows
 
-📂 Project Structure
+## 📂 Project Structure
 
-Scan-Files-and-Websites/
+- Scan-Files-and-Websites/
 │── manifest.json
 │── background.js
 │── popup.js
@@ -39,73 +39,51 @@ Scan-Files-and-Websites/
 │── README.md
 │── File and Website Security Scanner Chrome Extension.pdf
 
-👤 My Role
+## 👤 My Role
 
-    Designed and implemented the extension logic to monitor downloads and URL visits
+ - Designed and implemented the extension logic to monitor downloads and URL visits
 
-    Implemented SHA-256 hash calculation for files
+ - Implemented SHA-256 hash calculation for files
 
-    Integrated with VirusTotal & MetaDefender APIs for real-time scanning
+ - Integrated with VirusTotal & MetaDefender APIs for real-time scanning
 
-    Developed frontend popup UI & alerts for user interaction
+ - Developed frontend popup UI & alerts for user interaction
 
-    Ensured code modularity and maintainability
+ - Ensured code modularity and maintainability
 
-📸 Demo / Screenshots
+## ✅ Example Usage
 
-(Here you may include images or GIFs showing the extension in action)
+   - After installation, download a suspicious file (e.g., .exe)
 
-▶️ Installation & Usage
+   - The extension computes its hash and sends to both APIs
 
-    Clone the repository:
+   - If threat found → popup displays “Dangerous file detected. Consider deleting.”
 
-    git clone https://github.com/Ahmadsmnaser/Scan-Files-and-Websites.git
+   - If safe → “No threats found. You’re protected.”
 
-    Load the extension in Chrome:
+## 🔐 Security Notes
 
-        Go to chrome://extensions
+   - No file contents are sent; only SHA-256 hashes are transmitted.
 
-        Enable “Developer mode”
+   - API keys (if any) should be kept secret and not committed to the repository.
 
-        Click “Load unpacked” and select the project folder
+   - All user interactions are kept local to the browser extension.
 
-    Download a file or visit a URL to trigger a scan
+   - Future versions will support encrypted storage of results and improved user privacy.
 
-    See alert in popup if any threat is detected
+## 🔮 Future Improvements
 
-✅ Example Usage
+   - Add database logging of scan results for analytics
 
-    After installation, download a suspicious file (e.g., .exe)
+   - Add UI for user to submit false-positives for review
 
-    The extension computes its hash and sends to both APIs
+   - Integrate more scanning APIs for extended protection
 
-    If threat found → popup displays “Dangerous file detected. Consider deleting.”
+   - Add browser support for Firefox & Edge
 
-    If safe → “No threats found. You’re protected.”
+## 🧑‍💻 Author
 
-🔐 Security Notes
-
-    No file contents are sent; only SHA-256 hashes are transmitted.
-
-    API keys (if any) should be kept secret and not committed to the repository.
-
-    All user interactions are kept local to the browser extension.
-
-    Future versions will support encrypted storage of results and improved user privacy.
-
-🔮 Future Improvements
-
-    Add database logging of scan results for analytics
-
-    Add UI for user to submit false-positives for review
-
-    Integrate more scanning APIs for extended protection
-
-    Add browser support for Firefox & Edge
-
-🧑‍💻 Author
-
-Ahmad Naser
+- Ahmad Naser
 📧 Ahmadsmnaser@gmail.com
 
 🔗 GitHub: https://github.com/Ahmadsmnaser
