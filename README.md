@@ -12,7 +12,7 @@ It supports real-time threat detection using the VirusTotal and MetaDefender API
 - ✅ Popup UI built with HTML/CSS/JS for easy user interaction  
 
 ## 🧠 Architecture
-```text
+
 Browser Download/URL Event → Extension Background Script → API Scan (VirusTotal, MetaDefender) → Popup UI → User Alert
 
 The extension leverages Chrome Extension APIs, asynchronous messaging between background & popup, and robust hash computation & API integration.
