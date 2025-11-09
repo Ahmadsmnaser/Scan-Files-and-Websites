@@ -24,13 +24,13 @@ It supports real-time threat detection using the VirusTotal and MetaDefender API
 
     - Security APIs: VirusTotal, MetaDefender
 
-    - Tools: Git, Chrome DevTools, Webpack/ (if used)
+    - Tools: Git, Chrome DevTools
 
     - Security Concepts: SHA-256 hashing, asynchronous API calls, user alert flows
 
 ## 📂 Project Structure
 
-- Scan-Files-and-Websites/
+Scan-Files-and-Websites/
 │── manifest.json
 │── background.js
 │── popup.js
